@@ -13,7 +13,7 @@
  - Targeting particular element works however markup is structured.
  
  - Function `Editable()` have series of event listeners which handle particular portion of a code: 
-  1. First one is on click which gets clicked element and set its attribute `contentEditable` to true, also it passes it's value to `elm` variable.
+  1. First one is on click which gets clicked element and set its attribute `contentEditable` to true, also it passes it's value to `elm` variable which is then used in fourth event listener.
   2. Then there is a `mouseover` event which is used for highlighting targeted element.
   3. Third one removes everything that previous(`mouseover`) event did, when user moves cursor out of element.
   4. Last one is used that when user is done editing and by subsequently pressing `Esc` key, it ends it's editing session.
